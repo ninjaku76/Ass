@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FF3399"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtmessageCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#669933"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtmobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtrouteDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#660000"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txttruckLicense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00FF33"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtprovince"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFF00"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/txtsealImageList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#00FF33"
+        android:textSize="16sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/t_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/test_list"></androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
